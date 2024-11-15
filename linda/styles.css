@@ -1,0 +1,183 @@
+* body {
+    font-family: Dosis, sans-serif; /* Default font family */
+    font-size: 16px; /* Default font size */
+    color: #333; /* Default text color */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: 'Dosis', sans-serif; /* Navbar-specific font */
+    font-size: 26px; /* Navbar-specific font size */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.navbar img {
+    max-width: 50px;
+    max-height: 60px;
+
+}
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('DancingScript.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-family: 'Dancing Script', cursive; /* 'cursive' as a fallback font */
+  font-size: 89px; /* Font size for h1 */
+  color: #333; /* Optional: text color for h1 */
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive; /* 'cursive' as a fallback font */
+    font-size: 64px; /* Font size for h2 */
+    color: #333; /* Optional: text color for h2 */
+     margin-bottom: 5px;
+     margin-top: 20px;
+}
+
+.image-text-container {
+    display: flex;
+     justify-content: center; /* Centers the content horizontally */
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 20px; /* Adds space between the image and text */
+    margin: 40px; /* Centers the container and adds vertical space */
+    max-width: 1200px; /* Optional: Limit the width of the container */
+    margin-top: 9px;
+}
+
+/* Image styling */
+.side-image {
+    width: 100%; /* Makes image take full width of container */
+    height: auto; /* Keeps the image's aspect ratio */
+    max-width: 500px; /* Set max width for image to prevent it from getting too large */
+    margin-top: 80px;
+}
+
+/* Text styling */
+.side-text {
+    max-width: 500px; /* Controls the maximum width of the text */
+    font-size: 16px; /* Adjust font size */
+    color: #333; /* Optional: text color */
+    margin-left: 120px; /* Adds space between the image and text */
+    margin-top: 40px;
+}
+
+/* Ensures the image scales properly within the container */
+.side-image {
+    width: 130%; /* Makes image take full width of container */
+    height: auto; /* Maintains the image's aspect ratio */
+    max-width: auto; /* Sets a max width to prevent it from becoming too large */
+}
+.content-container {
+    max-width: 1150px; /* Adjust as needed for content width */
+    margin: 0 auto; /* Centers the container horizontally */
+    text-align: left; /* Left-aligns text within the container */
+    padding: 20px; /* Adds space around the text */
+}
+
+/* Styling for h1 */
+.content-container h1 {
+    font-family: 'Fast Hand', cursive;
+    font-size: 89px;
+    margin-bottom: 4px;
+}
+
+/* Styling for paragraph text */
+.content-container p {
+    font-size: 16px;
+    color: #333; /* Optional: text color */
+    line-height: 1.5; /* Improves readability */
+    margin-bottom: 20px;
+}
+.text-image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns the image to the top of the text */
+    gap: 20px;
+}
+
+/* Styling for the text content */
+.text-content {
+    flex: 1; /* Takes up remaining space on the left */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.text-content h1 {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 36px;
+    margin: 0 0 20px 0;
+}
+
+/* Styling for the image */
+.side-image {
+    width: 300px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+}
+h4 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    text-align: center; /* Centers the text */
+}
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    text-align: center; /* Centers the text */
+    margin-top: 8px;
+}
+h5 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.item-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the text container to provide spacing from the image */
+.text-container {
+    margin-left: 40px;
+}
+
+/* Optional styling for images and text */
+img {
+    max-width: 100%;
+    height: auto;
+}
+.rectangle {
+    display: inline-block;
+    width: 200px; /* Set width based on your layout needs */
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffffff; /* Light gray background color */
+    border: 2px solid #bf2024; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    color: gray; /* Gray text color */
+}
+.confirm-rectangle {
+    display: inline-block;
+    width: auto; /* Auto width based on the content */
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border: 2px solid #1A6E37;
+    border-radius: 5px;
+    text-align: center;
+    color: #1A6E37;
+}
+
