@@ -1,0 +1,254 @@
+body, html {
+  margin:0;
+  padding: 0;
+  height: 100%;
+}
+
+.background {
+  position: relative; /* Allows content to overlay */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  background-image: url('home.png'); /* Reference your image */
+  background-size: 35%; /* Ensures the image covers the entire background */
+  background-color: #000000;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repetition of the image */
+}
+.navbar {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    font-family: 'Bagel Fat One', sans-serif; /* Navbar-specific font */
+    font-size: 35px; /* Navbar-specific font size */
+    background-color: #000000; /* Optional: background color for navbar */
+}
+
+.navbar a {
+    color: #ffffff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+    padding: 10px 0;
+}
+
+.navbar a:hover {
+    color: #32CD32; /* Lime green color on hover */
+}
+.navbar-2 {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    font-family: 'Bagel Fat One', sans-serif; /* Navbar-specific font */
+    font-size: 35px; /* Navbar-specific font size */
+    background-color: #000000; /* Optional: background color for navbar */
+    margin-top: -50px;
+}
+
+.navbar-2 a {
+    color: #ffffff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+    padding: 10px 0;
+}
+
+.navbar-2 a:hover {
+    color: #32CD32; /* Lime green color on hover */
+}
+.content {
+  position: absolute; /* Position relative to .background */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust centering */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+}
+
+.page-content {
+  width: 70vw;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem; /* Heading size */
+}
+
+p {
+  font-size: 1.2rem; /* Paragraph size */
+}
+body, html {
+  body {
+  
+    margin: 0 auto; /* Center the page horizontally */
+}
+}
+
+.content {
+  position: absolute; /* Position relative to .background */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust centering */
+  text-align: center; /* Center the text */
+}
+
+h1 {
+  font-family: 'Bagel Fat One', sans-serif; /* Apply Bagel Fat One font */
+  font-size: 64px; /* Font size */
+  color: #ffffff; /* White text color */
+}
+h2 {
+  font-family: 'Bagel Fat One', sans-serif; /* Apply Bagel Fat One font */
+  font-size: 45px; /* Font size */
+  color: #ffffff; /* White text color */
+}
+
+p {
+  font-family: 'DotGothic16', sans-serif; /* Apply DotGothic16 font */
+  font-size: 16px; /* Font size */
+  color: #ffffff; /* White text color */
+  margin: 0; /* Add slight space below the heading */
+}
+.custom-link a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Make it match surrounding text */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.custom-link a:hover {
+    color: #32CD32; /* Lime green color */
+}
+body {
+  background-color: black;
+}
+.container {
+    position: relative;
+    text-align: center;  /* Centers text and images */
+}
+
+/* Style for the background image (timelines.png) */
+.background-img {
+    width: 30%;  /* Ensures the background image takes the full width of the container */
+    height: auto;  /* Keeps the image's aspect ratio */
+    position: relative;
+    z-index: 1;  /* Places the background image behind other elements */
+}
+
+/* General style for all overlay images */
+.overlay-img {
+    position: absolute;  /* Positions the overlay image relative to the container */
+    z-index: 2;  /* Ensures the overlay images are placed above the background image */
+    width: 100px;  /* Sets the default size of the overlay images (adjust as needed) */
+}
+
+/* Overlay image 1 (tl-i1.png) */
+.overlay-img-1 {
+    top: 45.8%; /* Adjust the vertical position */
+    left: 62%; /* Adjust the horizontal position */
+    width: 150px;
+}
+
+/* Overlay image 2 (tl-i2.png) */
+.overlay-img-2 {
+    top: 74.8%; /* Adjust the vertical position */
+    left: 30%; /* Adjust the horizontal position */
+    width: 150px;
+}
+
+/* Overlay image 3 (tl-i3.png) */
+.overlay-img-3 {
+    top: 107.8%; /* Adjust the vertical position */
+    left: 62%; /* Adjust the horizontal position */
+    width: 150px;
+}
+
+/* Overlay image 4 (tl-i4.png) */
+.overlay-img-4 {
+    top: 143%; /* Adjust the vertical position */
+    left: 30%; /* Adjust the horizontal position */
+    width: 150px;
+}
+
+/* Overlay image 5 (tl-i5.png) */
+.overlay-img-5 {
+    top: 182.3%; /* Adjust the vertical position */
+    left: 62%; /* Adjust the horizontal position */
+    width: 150px;
+/* Container to wrap both image and text */
+.item-container {
+  display: flex; /* Use flexbox layout to align items side by side */
+  align-items: center; /* Vertically center the content */
+  gap: 10px; /* Add space between the image and the text */
+  margin-bottom: 20px; /* Optional: Add space below the container */
+  width: 90px;
+}
+
+/* Image styles */
+.image {
+  width: 150px; /* Adjust image width */
+  height: auto; /* Keep the image aspect ratio */
+  flex-shrink: 0; /* Prevent the image from shrinking if there's not enough space */
+}
+
+/* Text container styles */
+.text-container {
+  max-width: 600px; /* Limit the width of the text container */
+  text-align: left; /* Align text to the left */
+}
+.text-image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns the image to the top of the text */
+    gap: 20px;
+}
+
+/* Styling for the text content */
+.text-content {
+    flex: 1; /* Takes up remaining space on the left */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Heading styles */
+h2 {
+  font-family: 'Bagel Fat One', sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+p {
+  font-family: 'DotGothic16', sans-serif; /* Example font */
+  font-size: 16px;
+  line-height: 1.5; /* Increase line spacing for readability */
+  color: #333; /* Set text color */
+  margin: 0 auto; /* Center the text block horizontally */
+  text-align: center; /* Optional: Align text in the center */
+}
+.camera-image {
+    display: block !important;
+    margin: 0 auto !important;
+    width: 150px !important;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out !important;
+}
+.hipster {
+    display: flex;
+    padding: 10px;
+    font-family: 'Bagel Fat One', sans-serif;
+    font-size: 35px;
+    background-color: #000000;
+}
+
+.hipster a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+.link-container a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Make it match surrounding text */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.link-container a:hover {
+    color: #32CD32; /* Lime green color */
+}
