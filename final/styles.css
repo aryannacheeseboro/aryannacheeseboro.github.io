@@ -1,0 +1,57 @@
+h1 {
+  font-family: 'Kode Mono', monospace;
+  font-size: 85pt;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Kode Mono', monospace;
+  font-size: 48pt;
+  font-weight: medium;
+  color: #000;
+  margin: 0;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+a img {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+a img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px 10px rgba(255, 105, 180, 0.8);
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-text {
+  position: absolute;
+  top: 0; /* Position text at the top of the image */
+  left: 50%; /* Center the text horizontally */
+  transform: translateX(-50%); /* Perfect horizontal centering */
+  font-family: 'Kode Mono', monospace;
+  font-size: 16px;
+  color: pink; /* Pink text color */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+}
+
+a:hover .hover-text {
+  opacity: 5; /* Text appears on hover */
+}
